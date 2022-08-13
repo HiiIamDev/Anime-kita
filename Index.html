@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Anime Kita | Home</title>
+</head>
+<style>
+    @media only screen and (max-width: 540px) {
+        .daftar-anime {
+            display: flex;
+        }
+    }
+    /* 
+    --@media screen and (max-width: 540px) {
+        .daftar-anime {
+            display: flex;
+        }
+    } */
+</style>
+<body style="font-family: Arimo, Sans-serif; margin: 0px;">
+    <div class="bodyContainer" style="background-image: url(/Assets/BG.jpg); background-repeat: no-repeat;">
+        <nav 
+        style="
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            /* background-color: rgba(0, 0, 0, 0.801) */
+            background-image: url(/Assets/headerbg.png);
+            background-repeat: no-repeat;
+            
+        "
+    >
+        <h2 style="
+            color : white
+        "
+        >Anime Kita</h2>
+        <ul
+            style="
+                display: flex;
+                justify-content: space-evenly;
+                width: 40%;
+                color: white;
+            "
+        >
+            <li style="margin: 10px; list-style: none; "><a href="#" style="
+                text-decoration: none; 
+                padding: 10px; 
+                background-color: #47B5FF; 
+                color: white; 
+                border-radius: 12px;
+            ">Home</a></li>
+            <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">Genre</a></li>
+            <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">Popular</a></li>
+            <li style="margin: 10px; list-style: none; "><a href="#" style="text-decoration: none; color: white">VIP</a></li>
+        </ul>
+    </nav>
+    <div class="bodyContainer" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    ">
+        <div class="container" style="
+        color: white;
+    ">
+        <h2>Anime Kita</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, iste?</p>
+        <div class="input" style="
+            display: flex;
+            border-radius: 15px;
+            background-color: white;
+            border: 20px;
+        ">
+            <input type="text" placeholder="Search Anime" list="animeList" style="padding: 10px; width: 100%; border: none; border-radius: 20px;">
+            <a href="#search" style="padding: 10px; border: none; border-radius: 20px; color: black;"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <datalist id="animeList">
+        <option value="Fullmetal Alchemist: Brotherhood (TV)"></option>
+        <option value="Steins;Gate (TV)	"></option>
+        <option value="Clannad After Story (TV)	"></option>
+        <option value="your name. (movie)"></option>
+        <option value="Rurouni Kenshin: Trust & Betrayal (OAV)"></option>
+        <option value="Code Geass: Lelouch of the Rebellion R2 (TV)	"></option>
+        <option value="Spirited Away (movie)	"></option>
+        <option value="Cowboy Bebop (TV)	"></option>
+        <option value="Mushishi: The Next Chapter (TV)	"></option>
+        <option value="Princess Mononoke (movie)	"></option>
+        <option value="(The) Disappearance of Haruhi Suzumiya (movie)	"></option>
+        <option value="(The) Legend of the Galactic Heroes (OAV)"></option>	
+        <option value="Mushi-Shi (TV)	"></option>
+        <option value="Death Note (TV)"></option>
+        <option value="A Silent Voice (movie)	"></option>
+        <option value="Maria Watches Over Us 3rd Season (OAV)	"></option>
+        <option value="Maria Watches Over Us Season 2: Printemps (TV)	"></option>
+        <option value="Code Geass: Lelouch of the Rebellion (TV)	"></option>
+        <option value="Monster (TV)	"></option>
+        <option value="Evangelion"></option>
+        <option value="Bunny Drop (TV)	"></option>
+        <option value="Made in Abyss (TV)"></option>
+        <option value="anohana: The Flower We Saw That Day (TV)"></option>
+        <option value="Maria Watches Over Us 4th Season (TV)	"></option>
+        <option value="Ghost in the Shell: Stand Alone Complex 2nd GIG (TV)"></option>	
+        <option value="Grave of the Fireflies (movie)	"></option>
+        <option value="Hajime no Ippo (TV)	"></option>
+        <option value="Gintama' (TV 2/2011)	"></option>
+        <option value="Fullmetal Alchemist (TV)	"></option>
+        <option value="Nausicaä of the Valley of the Wind (movie)	"></option>
+        <option value="Cross Game (TV)	"></option>
+        <option value="Gintama' (TV 3/2012)	"></option>
+        <option value="Summer Wars (movie)	"></option>
+        <option value="(The) Girl Who Leapt Through Time (movie)	"></option>
+        <option value="Gintama (TV 4/2015)	"></option>
+        <option value="Nodame Cantabile (TV)	"></option>
+    </datalist>
+    </div>
+    <div class="daftar-anime" style="display: flex;">
+        <!-- Card Anime Wibu KOntol -->
+        <div class="card" style="
+            text-align: center; 
+            /* display: flex; */
+            width: 15%;
+            margin: 20px;
+            height: auto;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 15px;
+        ">
+            <div class="img">
+                <img src="/Assets/OnePieceBG.jpg" width="240px">
+            </div>
+            <div class="header" style="transform: translateY(-50px);">
+                <h3 style="
+                    width: 100%;
+                    height: 26px;
+                    background-color: rgba(0, 0, 0, 0.671);
+                    color: white;
+                ">One Piece</h3>
+                <p>Eps: 1026</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+                <a href="#watching" style=" 
+                    padding: 10px;
+                    background-color: #47B5FF; 
+                    color: white; 
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 12px;
+                "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="card" style="
+        text-align: center; 
+        /* display: flex; */
+        width: 15%;
+        margin: 20px;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    ">
+        <div class="img">
+            <img src="/Assets/DBZ.jpg" width="240px">
+        </div>
+        <div class="header" style="transform: translateY(-50px);">
+            <h3 style="
+                width: 100%;
+                height: 26px;
+                background-color: rgba(0, 0, 0, 0.671);
+                color: white;
+            ">Dragon Ball Z</h3>
+            <p>Eps: null</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+            <a href="#watching" style=" 
+                padding: 10px;
+                background-color: #47B5FF; 
+                color: white; 
+                text-decoration: none;
+                border: none;
+                border-radius: 12px;
+            "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="card" style="
+        text-align: center; 
+        /* display: flex; */
+        width: 15%;
+        margin: 20px;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    ">
+        <div class="img">
+            <img src="/Assets/MercStoria.jpg" width="240px">
+        </div>
+        <div class="header" style="transform: translateY(-50px);">
+            <h3 style="
+                width: 100%;
+                height: 26px;
+                background-color: rgba(0, 0, 0, 0.671);
+                color: white;
+            ">Merch Storia</h3>
+            <p>Eps: null</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+            <a href="#watching" style=" 
+                padding: 10px;
+                background-color: #47B5FF; 
+                color: white; 
+                text-decoration: none;
+                border: none;
+                border-radius: 12px;
+            "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+        </div>
+    </div>
+    <div class="card" style="
+        text-align: center; 
+        /* display: flex; */
+        width: 15%;
+        margin: 20px;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    ">
+        <div class="img">
+            <img src="/Assets/NanatsuNoTaizai.jpg" width="240px">
+        </div>
+        <div class="header" style="transform: translateY(-50px);">
+            <h3 style="
+                width: 100%;
+                height: 26px;
+                background-color: rgba(0, 0, 0, 0.671);
+                color: white;
+            ">Nanatsu No Taizai</h3>
+            <p>Eps: null</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+            <a href="#watching" style=" 
+                padding: 10px;
+                background-color: #47B5FF; 
+                color: white; 
+                text-decoration: none;
+                border: none;
+                border-radius: 12px;
+            "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+        </div>
+    </div>
+    <div class="card" style="
+        text-align: center; 
+        /* display: flex; */
+        width: 15%;
+        margin: 20px;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    ">
+        <div class="img">
+            <img src="/Assets/BlackClover.jpg" width="240px">
+        </div>
+        <div class="header" style="transform: translateY(-50px);">
+            <h3 style="
+                width: 100%;
+                height: 26px;
+                background-color: rgba(0, 0, 0, 0.671);
+                color: white;
+            ">Black Clover</h3>
+            <p>Eps: 170</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+            <a href="#watching" style=" 
+                padding: 10px;
+                background-color: #47B5FF; 
+                color: white; 
+                text-decoration: none;
+                border: none;
+                border-radius: 12px;
+            "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+        </div>
+    </div>
+    <div class="card" style="
+        text-align: center; 
+        /* display: flex; */
+        width: 15%;
+        margin: 20px;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    ">
+        <div class="img">
+            <img src="/Assets/SDBH.jpg" width="240px">
+        </div>
+        <div class="header" style="transform: translateY(-50px);">
+            <h3 style="
+                width: 100%;
+                height: 26px;
+                background-color: rgba(0, 0, 0, 0.671);
+                color: white;
+            ">Super Dragon Ball Heroes</h3>
+            <p>Eps: NaN</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat?</p>
+            <a href="#watching" style=" 
+                padding: 10px;
+                background-color: #47B5FF; 
+                color: white; 
+                text-decoration: none;
+                border: none;
+                border-radius: 12px;
+            "><i class="fa fa-television" aria-hidden="true"></i>Watch</a>
+        </div>
+    </div>
+    </div>
+    <div class="footerContainer" style="
+        width: 100%;
+        height: 50%;
+        background-color: #100F0F;
+        color: white;
+    ">
+    <hr>
+    <h2 style="text-align: center;">Anime Kita</h2>
+        <div class="container" style="
+            display: flex;
+        ">
+            <div class="foot1" style="
+            display: flex;
+        ">
+                <a href="https://www.instagram.com/mhmd.rizky.ibrhm/?hl=id" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="foot2" style="
+        display: flex;
+    ">
+                <a href="https://github.com/HiiIamDev" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cupiditate unde veritatis impedit quam laborum.</p>
+        <br>
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- Belum Responsif -->
+<!-- IG: @mhmd.rizky.ibrhm -->
+<!-- Github: HiiIamDev -->
+<!-- Punya Gw Anjg Jangan Ngaku2 Lu Kontol -->
+
